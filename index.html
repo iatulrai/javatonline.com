@@ -95,40 +95,6 @@
         }
       }, 1000);
     </script>
-
-    <script type="text/javascript">
-      // I'm  building an function to validate the URL
-      function checkValidURL(url) {
-        var xmlhttp;
-        if (window.XMLHttpRequest) {
-          xmlhttp = new XMLHttpRequest();
-        } else {
-          // code for older browsers
-          xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-
-        // Callback
-        xmlhttp.onreadystatechange = function () {
-          if (this.status == 200) {
-            return true; // OK
-          } else {
-            // or -> } else if (this.status == 404) {
-            return false; // Ops, something happen..
-          }
-        };
-        // AJAX configuration
-        xmlhttp.open("GET", url, false); // <- "false" for a synchronous request
-        xmlhttp.send();
-      }
-
-      if (!checkValidURL(window.location.href)) {
-        window.location.href = "https://websparrow.org/";
-
-        // Call or check other URL
-      } else {
-        // It's OK, proceed with the business rules
-      }
-    </script>
   </head>
 
   <body>

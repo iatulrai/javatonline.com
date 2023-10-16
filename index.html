@@ -63,24 +63,9 @@
     <meta property="og:image:type" content="image/png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@websparrow_org" />
-    <style type="text/css">
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .card {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-      }
-    </style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
     <script>
       var countdown = 5;
@@ -96,14 +81,25 @@
       }, 1000);
     </script>
   </head>
-
-  <body>
-    <div class="card">
-      <h1>
-        Redirecting you to main website in
-        <span id="countdown">5</span> seconds...
-      </h1>
-      <h2>or <a href="https://websparrow.org/">click here</a></h2>
-    </div>
-  </body>
+<body>
+	<div class="body">
+		<span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+		<div class="base">
+			<span></span>
+			<div class="face"></div>
+		</div>
+	</div>
+	<div class="longfazers">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<h1>Reirecting to <a href="https://websparrow.org/">websparrow.org</a> in <span id="countdown">5</span> seconds...</h1>
+</body>
 </html>
